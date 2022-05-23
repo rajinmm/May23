@@ -1,0 +1,30 @@
+
+<form [formGroup]="addUser" (ngSubmit) ="onSubmit()">
+<div class="form-group">
+    <label>User Id</label>
+    <input type="text" class="form-control" placeholder="Enter user id" formControlName="id">
+</div>
+<div class="form-group">
+    <label>User Name</label>
+    <input type="text" class="form-control" placeholder="Enter user name" formControlName="name">
+</div>
+<div class="form-group">
+    <label>Email</label>
+    <input type="text" class="form-control" placeholder="Enter Email" formControlName="email">
+</div>
+<div class="form-group">
+    <label>Password</label>
+    <input type="text" class="form-control" placeholder="Enter Password" formControlName="password">
+</div>
+<div class="form-group">
+    <label>Status</label>
+    <input type="text" class="form-control"  list="exampleList" placeholder="select status" formControlName="active">
+    <datalist id="exampleList">
+        <option value="1">  
+        <option value="0">
+      </datalist>
+</div> 
+
+<button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
